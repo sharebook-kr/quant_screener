@@ -73,11 +73,11 @@ if __name__ == "__main__":
 
         if (i+1) % 100 == 0:
             df1 = pd.DataFrame(data=data, columns=columns)
-            df1.to_excel(f"data_{i+1}.xlsx")
+            df1.to_excel(f"./data/data_{i+1}.xlsx")
             data = []
 
         time.sleep(0.5)
 
     # last companies            
     df1 = pd.DataFrame(data=data, columns=columns)
-    df1.to_excel(f"data_last.xlsx")
+    df1.to_excel(f"./data/data_last.xlsx")
